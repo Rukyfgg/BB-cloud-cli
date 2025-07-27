@@ -13,8 +13,6 @@ from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad
 from stem import Signal
 from stem.control import Controller
-from stem.connection import AuthError
-from socket import error as SocketError
 
 # --- Main Configuration ---
 OUTPUT_FILE = "account.json"
