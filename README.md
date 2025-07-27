@@ -28,7 +28,7 @@ pkg install python tor git libjpeg-turbo libcrypt -y
 Clone this repository into your Termux home directory.
 
 ```bash
-git clone https://github.com/amit747gt/BB-cloud-cli.git
+git clone https://github.com/Rukyfgg/BB-cloud-cli.git
 cd BB-cloud-cli
 ```
 
