@@ -1,0 +1,4 @@
+requests
+pysocks
+pycryptodome
+stem
