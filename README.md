@@ -28,10 +28,9 @@ pkg install python tor git libjpeg-turbo libcrypt -y
 Clone this repository into your Termux home directory.
 
 ```bash
-git clone <URL_OF_YOUR_GIT_REPOSITORY>
-cd bby-tool
+git clone https://github.com/amit747gt/BB-cloud-cli.git
+cd BB-cloud-cli
 ```
-*(Replace `<URL_OF_YOUR_GIT_REPOSITORY>` with the actual URL where you host this code)*
 
 **Step 3: Install Python Dependencies**
 
