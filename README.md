@@ -78,7 +78,7 @@ You should see messages like "Bootstrapped 100% (done): Done". You can now press
 
 ## Usage
 
-All commands are run from the `bby-tool` directory. The tool will create and manage a file named `account.json` in the same directory.
+All commands are run from the `BB-cloud-cli` directory. The tool will create and manage a file named `account.json` in the same directory.
 
 ### Create Accounts
 
@@ -118,8 +118,7 @@ python bby_tool.py watchads
 
 - **"ModuleNotFoundError" or "ImportError"**:
     - You likely forgot to install the Python dependencies. Run `pip install -r requirements.txt` again.
-    - Make sure you are in the `bby-tool` directory when running the script.
+    - Make sure you are in the `BB-cloud-cli` directory when running the script.
 
 - **Account creation fails**:
-    - The temporary email service (SmailPro) or the target API might be down or have changed. The script relies on these external services.
     - Your Tor IP might be blocked. The script automatically requests a new one, but sometimes you can get a streak of bad IPs.
