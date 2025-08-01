@@ -42,8 +42,8 @@ TOR_PROXIES = {
 # --- Ad Watcher Configuration ---
 AD_ID = "300018224"
 INFO_STRING = "Network"
-CYCLE_WAIT_TIME_SECONDS = 2 * 60 + 10  # 2m 10s
-REQUEST_DELAY_SECONDS = 2
+CYCLE_WAIT_TIME_SECONDS = 2 * 60  
+REQUEST_DELAY_SECONDS = 5
 
 # === TOKEN GENERATION FUNCTIONS ===
 
@@ -78,7 +78,6 @@ def renew_tor_identity():
         with Controller.from_port(port=TOR_CONTROL_PORT) as controller:
             controller.authenticate()
             controller.signal(Signal.NEWNYM)
-            # print("[*] Tor: New identity requested.")
             return True
     except AuthError as e:
         print(f"[TOR ERROR] Authentication failed: {e}")
@@ -138,12 +137,11 @@ def save_accounts(accounts_list):
     try:
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
             json.dump(accounts_list, f, indent=4)
-        # print(f"[*] Successfully saved {len(accounts_list)} account(s) to {OUTPUT_FILE}.")
+            print(f"[*] Successfully saved {len(accounts_list)} account(s) to {OUTPUT_FILE}.")
         return True
     except IOError as e:
         print(f"[!] ERROR saving accounts to {OUTPUT_FILE}: {e}")
         return False
 
 def generate_random_hardware_id(length=16):
-    """Generates a random alphanumeric hardwareId."""
     return ''.join(random.choices(string.ascii_lowercase + string.digits, k=length))
