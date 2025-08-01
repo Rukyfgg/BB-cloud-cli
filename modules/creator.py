@@ -14,9 +14,8 @@ from .shared_utils import (
     verify_tor_connection
 )
 
-# NOTE: The SmailPro class is specific to account creation, so it stays here.
+
 class SmailPro:
-    # ... (The entire SmailPro class from account_creator.py goes here, unchanged)
     def __init__(self, proxies=None):
         self.session = requests.Session()
         if proxies: self.session.proxies.update(proxies)
