@@ -2,6 +2,10 @@
 
 A command-line tool to automate BeibeiCloud account creation, inviting, and ad-watching tasks, specifically configured for use in Termux.
 
+## Update
+
+**Efficiency of creating account is decreased due to recent blacklist of many email domain by bb cloud**
+
 ## Tutorial 
 
 https://youtu.be/ovewqi7d5i4
