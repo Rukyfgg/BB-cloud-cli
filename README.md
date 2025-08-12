@@ -1,9 +1,6 @@
 # BB-cloud-Tool for Termux
 
 A command-line tool to automate BeibeiCloud account creation, inviting, and ad-watching tasks, specifically configured for use in Termux.
-## Note
-
-**currently this script is not working due to bb cloud server is down or they paused their service**
 
 ## Tutorial 
 
